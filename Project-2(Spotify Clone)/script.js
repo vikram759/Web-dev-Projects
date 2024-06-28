@@ -149,5 +149,15 @@ async function main() {
 
 
     })
+      document.querySelector(".buttons").firstElementChild.addEventListener("click",()=>{
+       if ( document.querySelector(".box").style.left=='0px'){
+          
+        document.querySelector(".box").style.left= '-350px'
+
+       }
+       else{
+        document.querySelector(".box").style.left= '0px'
+       }
+    })
 }
 main()
